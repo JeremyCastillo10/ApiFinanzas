@@ -11,13 +11,13 @@ namespace Shared.DTOs.Meta
     {
         public int MetaId { get; set; }
         public int UsuarioId { get; set; }
-        public Usuario_DTO Usuario { get; set; } = null!;
+        public Usuario_DTO ?Usuario { get; set; } 
 
-        public string Nombre { get; set; } = string.Empty; // Ejemplo: Comprar un carro
-        public decimal MontoMeta { get; set; } // Cantidad objetivo
-        public decimal MontoAhorrado { get; set; } = 0; // Progreso actual
+        public string ?Nombre { get; set; } = string.Empty; 
+        public decimal ?MontoMeta { get; set; } 
+        public decimal ?MontoAhorrado { get; set; } = 0; 
         public DateTime FechaMeta { get; set; }
-        public string Estado { get; set; } = "En Progreso"; // Puede ser "En Progreso" o "Completada"
+        public string ?Estado { get; set; } = "En Progreso";
     }
 }
 }
