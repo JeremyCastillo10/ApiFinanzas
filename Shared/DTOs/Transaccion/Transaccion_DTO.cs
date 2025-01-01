@@ -12,15 +12,15 @@ namespace Shared.DTOs.Transaccion
     {
         public int Id { get; set; }
         public int UsuarioId { get; set; }
-        public Usuario_DTO Usuario { get; set; } = null!;
+        public Usuario_DTO ?Usuario { get; set; }
 
         public decimal ?Monto { get; set; }
         public DateTime Fecha { get; set; }
-        public string ?Tipo { get; set; } 
+        public string ?Tipo { get; set; } = string.Empty;
 
         public int CategoriaId { get; set; }
-        public Categoria_DTO Categoria { get; set; } = null!;
+        public Categoria_DTO ?Categoria { get; set; }
 
-        public string? Descripcion { get; set; }
+        public string? Descripcion { get; set; } = string.Empty;
     }
 }
