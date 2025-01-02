@@ -28,7 +28,6 @@ namespace Shared.DTOs.Cuenta
         [Compare("Password", ErrorMessage = "Las contraseñas no coinciden.")]
         public string ConfirmPassword { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "El Rol es obligatorio.")]
         public string RolId { get; set; } = string.Empty;
 
     }

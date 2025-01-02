@@ -20,4 +20,4 @@ namespace Shared.DTOs.Meta
         public string ?Estado { get; set; } = "En Progreso";
     }
 }
-}
+
