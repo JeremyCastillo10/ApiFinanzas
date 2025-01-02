@@ -12,6 +12,8 @@ namespace ApiFinanzas.Models
         public decimal MontoMeta { get; set; }
         public decimal MontoAhorrado { get; set; } 
         public DateTime FechaMeta { get; set; }
-        public string Estado { get; set; } 
+        public string Estado { get; set; }
+        public DateTime FechaCreacion { get; set; }
+        public DateTime FechaActualizacion { get; set; }
     }
 }

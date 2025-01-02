@@ -9,5 +9,7 @@ namespace ApiFinanzas.Models
         public string Nombre { get; set; } 
         public string Tipo { get; set; }
         public string Color { get; set; }
+        public DateTime FechaCreacion { get; set; }
+        public DateTime FechaActualizacion { get; set; }
     }
 }

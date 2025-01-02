@@ -12,5 +12,9 @@ namespace Shared.DTOs.Categoria
         public string ?Nombre { get; set; } = string.Empty; // Ejemplo: Alimentación, Transporte
         public string ?Tipo { get; set; } 
         public string ?Color { get; set; }
+        public bool Eliminado = false;
+
+        public DateTime FechaCreacion { get; set; } = DateTime.Now;
+        public DateTime FechaActualizacion { get; set; }
     }
 }

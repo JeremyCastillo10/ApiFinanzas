@@ -20,7 +20,11 @@ namespace Shared.DTOs.Transaccion
 
         public int CategoriaId { get; set; }
         public Categoria_DTO ?Categoria { get; set; }
-
         public string? Descripcion { get; set; } = string.Empty;
+        public bool Eliminado = false;
+        
+        public DateTime FechaCreacion { get; set; }= DateTime.Now;
+        public DateTime FechaActualizacion { get; set; } 
+
     }
 }

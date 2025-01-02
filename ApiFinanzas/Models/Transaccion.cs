@@ -17,5 +17,7 @@ namespace ApiFinanzas.Models
         public Categoria Categoria { get; set; } = null!;
 
         public string Descripcion { get; set; }
+        public DateTime FechaCreacion { get; set; }
+        public DateTime FechaActualizacion { get; set; }
     }
 }

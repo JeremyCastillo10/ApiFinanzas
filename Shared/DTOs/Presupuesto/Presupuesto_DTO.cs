@@ -21,6 +21,10 @@ namespace Shared.DTOs.Presupuesto
         public decimal MontoGastado { get; set; } = 0; 
         public DateTime FechaInicio { get; set; }
         public DateTime FechaFin { get; set; }
-        public string Estado { get; set; } 
+        public string Estado { get; set; }
+        public bool Eliminado = false;
+
+        public DateTime FechaCreacion { get; set; } = DateTime.Now;
+        public DateTime FechaActualizacion { get; set; }
     }
 }

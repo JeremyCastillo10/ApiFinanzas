@@ -18,6 +18,10 @@ namespace Shared.DTOs.Meta
         public decimal ?MontoAhorrado { get; set; } = 0; 
         public DateTime FechaMeta { get; set; }
         public string ?Estado { get; set; } = "En Progreso";
+        public bool Eliminado = false;
+
+        public DateTime FechaCreacion { get; set; } = DateTime.Now;
+        public DateTime FechaActualizacion { get; set; }
     }
 }
 
