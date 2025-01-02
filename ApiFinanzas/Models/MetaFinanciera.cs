@@ -1,11 +1,13 @@
-﻿namespace ApiFinanzas.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ApiFinanzas.Models
 {
     public class MetaFinanciera
     {
+        [Key]
         public int MetaId { get; set; }
         public int UsuarioId { get; set; }
         public Usuario Usuario { get; set; }
-
         public string Nombre { get; set; } 
         public decimal MontoMeta { get; set; }
         public decimal MontoAhorrado { get; set; } 
