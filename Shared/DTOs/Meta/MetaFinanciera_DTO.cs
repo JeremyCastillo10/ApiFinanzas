@@ -1,5 +1,4 @@
-﻿using Shared.DTOs.Usuarios;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +9,7 @@ namespace Shared.DTOs.Meta
     public class MetaFinanciera_DTO
     {
         public int MetaId { get; set; }
-        public string UserId { get; set; } = string.Empty;
+        public string ?UserId { get; set; } = string.Empty;
 
         public string ?Nombre { get; set; } = string.Empty; 
         public decimal ?MontoMeta { get; set; } 

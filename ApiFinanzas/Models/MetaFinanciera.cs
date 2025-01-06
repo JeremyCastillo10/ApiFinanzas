@@ -6,7 +6,6 @@ namespace ApiFinanzas.Models
     {
         [Key]
         public int MetaId { get; set; }
-        public string UserId { get; set; } = string.Empty;
         public virtual Usuario Usuario { get; set; }
         public string Nombre { get; set; } 
         public decimal MontoMeta { get; set; }
