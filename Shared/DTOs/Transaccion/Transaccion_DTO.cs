@@ -1,5 +1,4 @@
 ﻿using Shared.DTOs.Categoria;
-using Shared.DTOs.Usuarios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
