@@ -2,6 +2,7 @@
 using ApiFinanzas.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Shared.DTOs.Categoria;
 
 namespace ApiFinanzas.Controllers
@@ -22,7 +23,7 @@ namespace ApiFinanzas.Controllers
                 .Where(a => a.Eliminado == false)
                 .Select(a => new Categoria_DTO
                 {
-                    Id = a.Id,
+                    CategoriaId = a.CategoriaId,
                     Nombre = a.Nombre,
                 })
                 .ToListAsync();
@@ -37,7 +38,7 @@ namespace ApiFinanzas.Controllers
 
 
 
-            if (categoria_DTO.Id > 0)
+            if (categoria_DTO.CategoriaId > 0)
             {
                 var categoria = await _db.Categorias.FindAsync(categoria_DTO.CategoriaId);
                 categoria.Nombre = categoria_DTO.Nombre;

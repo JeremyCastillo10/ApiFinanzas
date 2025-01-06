@@ -11,5 +11,6 @@ namespace ApiFinanzas.Models
         public string Color { get; set; }
         public DateTime FechaCreacion { get; set; }
         public DateTime FechaActualizacion { get; set; }
+        public bool Eliminado { get; set; }
     }
 }
