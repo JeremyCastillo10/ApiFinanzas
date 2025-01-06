@@ -10,8 +10,7 @@ namespace Shared.DTOs.Meta
     public class MetaFinanciera_DTO
     {
         public int MetaId { get; set; }
-        public int UsuarioId { get; set; }
-        public Usuario_DTO ?Usuario { get; set; } 
+        public string UserId { get; set; } = string.Empty;
 
         public string ?Nombre { get; set; } = string.Empty; 
         public decimal ?MontoMeta { get; set; } 

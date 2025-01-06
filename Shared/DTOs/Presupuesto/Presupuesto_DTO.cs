@@ -11,8 +11,7 @@ namespace Shared.DTOs.Presupuesto
     public class Presupuesto_DTO
     {
         public int Id { get; set; }
-        public int UsuarioId { get; set; }
-        public Usuario_DTO Usuario { get; set; } = null!;
+        public string UserId { get; set; } = string.Empty;
 
         public int CategoriaId { get; set; }
         public Categoria_DTO Categoria { get; set; } = null!;

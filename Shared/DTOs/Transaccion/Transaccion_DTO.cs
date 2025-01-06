@@ -11,10 +11,9 @@ namespace Shared.DTOs.Transaccion
     public class Transaccion_DTO
     {
         public int Id { get; set; }
-        public int UsuarioId { get; set; }
-        public Usuario_DTO ?Usuario { get; set; }
+        public string UserId { get; set; } = string.Empty;
 
-        public decimal ?Monto { get; set; }
+        public decimal? Monto { get; set; } = 0;
         public DateTime Fecha { get; set; }
         public string ?Tipo { get; set; } = string.Empty;
 

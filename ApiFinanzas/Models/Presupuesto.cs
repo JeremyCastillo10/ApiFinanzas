@@ -6,10 +6,10 @@ namespace ApiFinanzas.Models
     {
         [Key]
         public int Id { get; set; }
-        public int UsuarioId { get; set; }
-        public Usuario Usuario { get; set; }
+        public string UserId { get; set; } = string.Empty;
+        public virtual Usuario Usuario { get; set; }
         public int CategoriaId { get; set; }
-        public Categoria Categoria { get; set; }
+        public virtual Categoria Categoria { get; set; }
         public decimal MontoPlaneado { get; set; }
         public decimal MontoGastado { get; set; } 
         public DateTime FechaInicio { get; set; }
